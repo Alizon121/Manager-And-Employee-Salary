@@ -7,8 +7,7 @@ constructor(name, salary, title, manager = null, employees = []) {
 }
 
 addEmployee(employee) {
-    let newEmp = new Manager(employee)
-    return this.employees.push(newEmp)
+    return this.employees.push(employee)
 }
 
 
@@ -16,3 +15,5 @@ addEmployee(employee) {
 
 const splinter = new Manager('Splinter', 100000, 'Sensei');
 console.log(splinter);
+
+module.exports = Manager
